@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#BBDDF8">
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arbutus"
+        android:text="Sign up"
+        android:textColor="#E91E63"
+        android:textSize="26sp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/signup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/signup"
+        app:layout_constraintTop_toBottomOf="@id/signup" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="test@gmail.com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@id/username" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        app:layout_constraintEnd_toEndOf="@+id/password1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/password1"
+        app:layout_constraintTop_toBottomOf="@id/password1" />
+
+    <Button
+        android:id="@+id/signupbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="signup"
+        app:layout_constraintEnd_toEndOf="@+id/password2"
+        app:layout_constraintStart_toStartOf="@+id/password2"
+        app:layout_constraintTop_toBottomOf="@+id/password2"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/already_have_an_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Already have an account?"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/signupbut"
+        app:layout_constraintStart_toStartOf="@+id/signupbut"
+        app:layout_constraintTop_toBottomOf="@+id/signupbut" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
